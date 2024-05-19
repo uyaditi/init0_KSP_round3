@@ -138,23 +138,6 @@ function Overview() {
         email: "alecthompson@mail.com",
         location: "USA",
       }}
-      social={[
-        {
-          link: "https://www.facebook.com/CreativeTim/",
-          icon: <FacebookIcon />,
-          color: "facebook",
-        },
-        {
-          link: "https://twitter.com/creativetim",
-          icon: <TwitterIcon />,
-          color: "twitter",
-        },
-        {
-          link: "https://www.instagram.com/creativetimofficial/",
-          icon: <InstagramIcon />,
-          color: "instagram",
-        },
-      ]}
       action={{ route: "", tooltip: "Edit Profile" }}
     />
   </Grid>

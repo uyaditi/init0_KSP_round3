@@ -52,7 +52,7 @@ const authorsTableData = {
 
   rows: [
     {
-      author: <Author image={team2} name="John Michael" email="john@creative-tim.com" />,
+      author: <Author image={team2} name="init 0" email="init0@gmail.com" />,
       function: <Function job="Manager" org="Organization" />,
       status: (
         <ArgonBadge variant="gradient" badgeContent="online" color="success" size="xs" container />
@@ -75,7 +75,7 @@ const authorsTableData = {
       ),
     },
     {
-      author: <Author image={team3} name="Alexa Liras" email="alexa@creative-tim.com" />,
+      author: <Author image={team3} name="init 0" email="" />,
       function: <Function job="Programator" org="Developer" />,
       status: (
         <ArgonBadge variant="gradient" badgeContent="offline" color="secondary" size="xs" container />
@@ -98,7 +98,7 @@ const authorsTableData = {
       ),
     },
     {
-      author: <Author image={team4} name="Laurent Perrier" email="laurent@creative-tim.com" />,
+      author: <Author image={team4} name="" email="" />,
       function: <Function job="Executive" org="Projects" />,
       status: (
         <ArgonBadge variant="gradient" badgeContent="online" color="success" size="xs" container />
@@ -121,7 +121,7 @@ const authorsTableData = {
       ),
     },
     {
-      author: <Author image={team3} name="Michael Levi" email="michael@creative-tim.com" />,
+      author: <Author image={team3} name="Michael Levi" email="" />,
       function: <Function job="Programator" org="Developer" />,
       status: (
         <ArgonBadge variant="gradient" badgeContent="online" color="success" size="xs" container />
@@ -144,7 +144,7 @@ const authorsTableData = {
       ),
     },
     {
-      author: <Author image={team2} name="Richard Gran" email="richard@creative-tim.com" />,
+      author: <Author image={team2} name="Richard Gran" email="" />,
       function: <Function job="Manager" org="Executive" />,
       status: (
         <ArgonBadge variant="gradient" badgeContent="offline" color="secondary" size="xs" container />
@@ -167,7 +167,7 @@ const authorsTableData = {
       ),
     },
     {
-      author: <Author image={team4} name="Miriam Eric" email="miriam@creative-tim.com" />,
+      author: <Author image={team4} name="Miriam Eric" email="" />,
       function: <Function job="Programtor" org="Developer" />,
       status: (
         <ArgonBadge variant="gradient" badgeContent="offline" color="secondary" size="xs" container />

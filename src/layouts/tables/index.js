@@ -17,6 +17,7 @@ import Table from "examples/Tables/Table";
 // Data
 import authorsTableData from "layouts/tables/data/authorsTableData";
 import projectsTableData from "layouts/tables/data/projectsTableData";
+import CrimeReportForm from "./beats";
 
 function Tables() {
   const { columns, rows } = authorsTableData;
@@ -30,21 +31,9 @@ function Tables() {
         <ArgonBox mb={3}>
           <Card>
             <ArgonBox display="flex" justifyContent="space-between" alignItems="center" p={3}>
-              <ArgonTypography variant="h6">Authors table</ArgonTypography>
             </ArgonBox>
+            <CrimeReportForm/>
             <Slider/>
-            <ArgonBox
-              sx={{
-                "& .MuiTableRow-root:not(:last-child)": {
-                  "& td": {
-                    borderBottom: ({ borders: { borderWidth, borderColor } }) =>
-                      `${borderWidth[1]} solid ${borderColor}`,
-                  },
-                },
-              }}
-            >
-              <Table columns={columns} rows={rows} />
-            </ArgonBox>
           </Card>
         </ArgonBox>
         <Card>

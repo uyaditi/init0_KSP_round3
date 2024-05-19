@@ -67,8 +67,6 @@ function Overview() {
         return <VictimTabContent />;
       case 1:
         return <OffenderTabContent />;
-      case 2:
-        return <CriminalProfilingTabContent />;
       default:
         return null;
     }
@@ -103,10 +101,6 @@ function Overview() {
                     label="Offender"
                     icon={<i className="ni ni-email-83" style={{ marginTop: "6px", marginRight: "8px" }} />}
                   />
-                  <Tab
-                    label="Criminal Profiling"
-                    icon={<i className="ni ni-settings-gear-65" style={{ marginTop: "6px", marginRight: "8px" }} />}
-                  />
                 </Tabs>
               </AppBar>
             </Grid>
@@ -114,46 +108,7 @@ function Overview() {
         </Card>
       </ArgonBox>
 
-      {/* <ArgonBox mt={5} mb={3}>
-        <Grid container spacing={3}>
-          <Grid item xs={12} md={6} xl={4}>
-            <PlatformSettings />
-          </Grid>
-          <Grid item xs={12} md={6} xl={4}>
-            <ProfileInfoCard
-              title="profile information"
-              description="Hi, I'm Alec Thompson, Decisions: If you can't decide, the answer is no. If two equally difficult paths, choose the one more painful in the short term (pain avoidance is creating an illusion of equality)."
-              info={{
-                fullName: "Alec M. Thompson",
-                mobile: "(44) 123 1234 123",
-                email: "alecthompson@mail.com",
-                location: "USA",
-              }}
-              social={[
-                {
-                  link: "https://www.facebook.com/CreativeTim/",
-                  icon: <FacebookIcon />,
-                  color: "facebook",
-                },
-                {
-                  link: "https://twitter.com/creativetim",
-                  icon: <TwitterIcon />,
-                  color: "twitter",
-                },
-                {
-                  link: "https://www.instagram.com/creativetimofficial/",
-                  icon: <InstagramIcon />,
-                  color: "instagram",
-                },
-              ]}
-              action={{ route: "", tooltip: "Edit Profile" }}
-            />
-          </Grid>
-          <Grid item xs={12} xl={4}>
-            <ProfilesList title="conversations" profiles={profilesListData} />
-          </Grid>
-        </Grid>
-      </ArgonBox> */}
+      
       
       {renderTabContent()}
 

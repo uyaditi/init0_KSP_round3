@@ -51,17 +51,6 @@ const routes = [
   },
   {
     type: "route",
-    name: "Beats",
-    key: "tables",
-    route: "/beats",
-    icon: (
-      <ArgonBox component="i" color="warning" fontSize="14px" className="ni ni-calendar-grid-58" />
-    ),
-    component: <Tables />,
-  },
-
-  {
-    type: "route",
     name: "Maps",
     key: "virtual-reality",
     route: "/maps",
@@ -75,14 +64,6 @@ const routes = [
     route: "/demographics",
     icon: <ArgonBox component="i" color="dark" fontSize="14px" className="ni ni-single-02" />,
     component: <Profile />,
-  },
-  {
-    type: "route",
-    name: "RTL",
-    key: "rtl",
-    route: "/rtl",
-    icon: <ArgonBox component="i" color="error" fontSize="14px" className="ni ni-world-2" />,
-    component: <RTL />,
   },
   {
     type: "route",

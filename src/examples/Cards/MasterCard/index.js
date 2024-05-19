@@ -13,7 +13,7 @@ import ArgonTypography from "components/ArgonTypography";
 // Images
 import masterCardLogo from "assets/images/logos/mastercard.png";
 const bgImage =
-  "https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/card-visa.jpg";
+  "";
 
 function MasterCard({ color, number, holder, expires }) {
   const numbers = [...`${number}`];
