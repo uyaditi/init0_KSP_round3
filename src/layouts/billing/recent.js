@@ -112,7 +112,7 @@ function RecentTabContent() {
         <ArgonBox mb={3}>
           <Card>
             <ArgonBox display="flex" justifyContent="space-between" alignItems="center" p={3}>
-              <ArgonTypography variant="h6">Authors table</ArgonTypography>
+              <ArgonTypography variant="h6">Recent Crimes</ArgonTypography>
             </ArgonBox>
             <Slider/>
             <ArgonBox

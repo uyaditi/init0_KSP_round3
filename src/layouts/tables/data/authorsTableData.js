@@ -6,15 +6,15 @@ import ArgonAvatar from "components/ArgonAvatar";
 import ArgonBadge from "components/ArgonBadge";
 
 // Images
-import team2 from "assets/images/team-2.jpg";
-import team3 from "assets/images/team-3.jpg";
-import team4 from "assets/images/team-4.jpg";
+import suspect2 from "assets/images/suspect.png";
+import suspect3 from "assets/images/suspect.png";
+import suspect4 from "assets/images/suspect.png";
 
-function Author({ image, name, email }) {
+function Suspect({ image, name, email }) {
   return (
     <ArgonBox display="flex" alignItems="center" px={1} py={0.5}>
       <ArgonBox mr={2}>
-        <ArgonAvatar src={image} alt={name} size="sm" variant="rounded" />
+        <ArgonAvatar src={image} alt={name} size="sm" variant="square" />
       </ArgonBox>
       <ArgonBox display="flex" flexDirection="column">
         <ArgonTypography variant="button" fontWeight="medium">
@@ -28,41 +28,41 @@ function Author({ image, name, email }) {
   );
 }
 
-function Function({ job, org }) {
+function CrimeType({ type, category }) {
   return (
     <ArgonBox display="flex" flexDirection="column">
       <ArgonTypography variant="caption" fontWeight="medium" color="text">
-        {job}
+        {type}
       </ArgonTypography>
       <ArgonTypography variant="caption" color="secondary">
-        {org}
+        {category}
       </ArgonTypography>
     </ArgonBox>
   );
 }
 
-const authorsTableData = {
+const crimesTableData = {
   columns: [
-    { name: "author", align: "left" },
-    { name: "function", align: "left" },
-    { name: "status", align: "center" },
-    { name: "employed", align: "center" },
-    { name: "action", align: "center" },
+    { name: "Suspect Name", align: "left" },
+    { name: "Crime Type", align: "left" },
+    { name: "Investigation Status", align: "center" },
+    { name: "Law Enforcement Involved", align: "center" },
+    { name: "Legal Action Taken", align: "center" },
   ],
 
   rows: [
     {
-      author: <Author image={team2} name="init 0" email="init0@gmail.com" />,
-      function: <Function job="Manager" org="Organization" />,
-      status: (
-        <ArgonBadge variant="gradient" badgeContent="online" color="success" size="xs" container />
+      "Suspect Name": <Suspect image={suspect2} name="Ajay Kumar"/>,
+      "Crime Type": <CrimeType type="Robbery" category="Felony" />,
+      "Investigation Status": (
+        <ArgonBadge variant="gradient" badgeContent="Ongoing" color="warning" size="xs" container />
       ),
-      employed: (
+      "Law Enforcement Involved": (
         <ArgonTypography variant="caption" color="secondary" fontWeight="medium">
-          23/04/18
+          Local Police
         </ArgonTypography>
       ),
-      action: (
+      "Legal Action Taken": (
         <ArgonTypography
           component="a"
           href="#"
@@ -70,22 +70,22 @@ const authorsTableData = {
           color="secondary"
           fontWeight="medium"
         >
-          Edit
+          Suspect Arrested
         </ArgonTypography>
       ),
     },
     {
-      author: <Author image={team3} name="init 0" email="" />,
-      function: <Function job="Programator" org="Developer" />,
-      status: (
-        <ArgonBadge variant="gradient" badgeContent="offline" color="secondary" size="xs" container />
+      "Suspect Name": <Suspect image={suspect3} name="Shreya Rao" email="" />,
+      "Crime Type": <CrimeType type="Fraud" category="White-Collar" />,
+      "Investigation Status": (
+        <ArgonBadge variant="gradient" badgeContent="Unsolved" color="error" size="xs" container />
       ),
-      employed: (
+      "Law Enforcement Involved": (
         <ArgonTypography variant="caption" color="secondary" fontWeight="medium">
-          11/01/19
+          Local Police
         </ArgonTypography>
       ),
-      action: (
+      "Legal Action Taken": (
         <ArgonTypography
           component="a"
           href="#"
@@ -93,22 +93,22 @@ const authorsTableData = {
           color="secondary"
           fontWeight="medium"
         >
-          Edit
+          Investigation Ongoing
         </ArgonTypography>
       ),
     },
     {
-      author: <Author image={team4} name="" email="" />,
-      function: <Function job="Executive" org="Projects" />,
-      status: (
-        <ArgonBadge variant="gradient" badgeContent="online" color="success" size="xs" container />
+      "Suspect Name": <Suspect image={suspect4} name="Anand Gowda" email="" />,
+      "Crime Type": <CrimeType type="Assault" category="Violent" />,
+      "Investigation Status": (
+        <ArgonBadge variant="gradient" badgeContent="Solved" color="success" size="xs" container />
       ),
-      employed: (
+      "Law Enforcement Involved": (
         <ArgonTypography variant="caption" color="secondary" fontWeight="medium">
-          19/09/17
+          Local Police
         </ArgonTypography>
       ),
-      action: (
+      "Legal Action Taken": (
         <ArgonTypography
           component="a"
           href="#"
@@ -116,22 +116,22 @@ const authorsTableData = {
           color="secondary"
           fontWeight="medium"
         >
-          Edit
+          Convicted and Sentenced
         </ArgonTypography>
       ),
     },
     {
-      author: <Author image={team3} name="Michael Levi" email="" />,
-      function: <Function job="Programator" org="Developer" />,
-      status: (
-        <ArgonBadge variant="gradient" badgeContent="online" color="success" size="xs" container />
+      "Suspect Name": <Suspect image={suspect3} name="Kavitha Reddy" email="" />,
+      "Crime Type": <CrimeType type="Cybercrime" category="Technology" />,
+      "Investigation Status": (
+        <ArgonBadge variant="gradient" badgeContent="Ongoing" color="warning" size="xs" container />
       ),
-      employed: (
+      "Law Enforcement Involved": (
         <ArgonTypography variant="caption" color="secondary" fontWeight="medium">
-          24/12/08
+          Cyber Division
         </ArgonTypography>
       ),
-      action: (
+      "Legal Action Taken": (
         <ArgonTypography
           component="a"
           href="#"
@@ -139,22 +139,22 @@ const authorsTableData = {
           color="secondary"
           fontWeight="medium"
         >
-          Edit
+          Search Warrant Issued
         </ArgonTypography>
       ),
     },
     {
-      author: <Author image={team2} name="Richard Gran" email="" />,
-      function: <Function job="Manager" org="Executive" />,
-      status: (
-        <ArgonBadge variant="gradient" badgeContent="offline" color="secondary" size="xs" container />
+      "Suspect Name": <Suspect image={suspect2} name="Sanjay Nair" email="" />,
+      "Crime Type": <CrimeType type="Drug Trafficking" category="Narcotics" />,
+      "Investigation Status": (
+        <ArgonBadge variant="gradient" badgeContent="Solved" color="success" size="xs" container />
       ),
-      employed: (
+      "Law Enforcement Involved": (
         <ArgonTypography variant="caption" color="secondary" fontWeight="medium">
-          04/10/21
+          NCB Division
         </ArgonTypography>
       ),
-      action: (
+      "Legal Action Taken": (
         <ArgonTypography
           component="a"
           href="#"
@@ -162,22 +162,22 @@ const authorsTableData = {
           color="secondary"
           fontWeight="medium"
         >
-          Edit
+          Arrested and Charges Filed
         </ArgonTypography>
       ),
     },
     {
-      author: <Author image={team4} name="Miriam Eric" email="" />,
-      function: <Function job="Programtor" org="Developer" />,
-      status: (
-        <ArgonBadge variant="gradient" badgeContent="offline" color="secondary" size="xs" container />
+      "Suspect Name": <Suspect image={suspect4} name="Meena Patel" email="" />,
+      "Crime Type": <CrimeType type="Vandalism" category="Property" />,
+      "Investigation Status": (
+        <ArgonBadge variant="gradient" badgeContent="Unsolved" color="error" size="xs" container />
       ),
-      employed: (
+      "Law Enforcement Involved": (
         <ArgonTypography variant="caption" color="secondary" fontWeight="medium">
-          14/09/20
+          Local Police
         </ArgonTypography>
       ),
-      action: (
+      "Legal Action Taken": (
         <ArgonTypography
           component="a"
           href="#"
@@ -185,11 +185,11 @@ const authorsTableData = {
           color="secondary"
           fontWeight="medium"
         >
-          Edit
+          Investigation Ongoing
         </ArgonTypography>
       ),
     },
   ],
 };
 
-export default authorsTableData;
+export default crimesTableData;

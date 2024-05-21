@@ -102,7 +102,10 @@ function Overview() {
                     label="Hotspots"
                     icon={<i className="ni ni-email-83" style={{ marginTop: "6px", marginRight: "8px" }} />}
                   />
-                  
+                  <Tab
+                    label="Recent"
+                    icon={<i className="ni ni-settings-gear-65" style={{ marginTop: "6px", marginRight: "8px" }} />}
+                  />
                 </Tabs>
               </AppBar>
             </Grid>

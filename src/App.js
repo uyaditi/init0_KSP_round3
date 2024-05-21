@@ -35,7 +35,7 @@ import { useArgonController, setMiniSidenav, setOpenConfigurator } from "context
 
 // Images
 import brand from "assets/images/logo-ct.png";
-import brandDark from "assets/images/logo-ct-dark.png";
+import brandDark from "assets/images/logo-ct.png";
 
 // Icon Fonts
 import "assets/css/nucleo-icons.css";
@@ -135,7 +135,7 @@ export default function App() {
             <Sidenav
               color={sidenavColor}
               brand={darkSidenav || darkMode ? brand : brandDark}
-              brandName="KSP"
+              brandName=" KSP"
               routes={routes}
               onMouseEnter={handleOnMouseEnter}
               onMouseLeave={handleOnMouseLeave}
@@ -159,7 +159,7 @@ export default function App() {
           <Sidenav
             color={sidenavColor}
             brand={darkSidenav || darkMode ? brand : brandDark}
-            brandName="KSP"
+            brandName=" KSP"
             routes={routes}
             onMouseEnter={handleOnMouseEnter}
             onMouseLeave={handleOnMouseLeave}
@@ -171,7 +171,7 @@ export default function App() {
       {layout === "vr" && <Configurator />}
       <Routes>
         {getRoutes(routes)}
-        <Route path="*" element={<Navigate to="/dashboard" />} />
+        <Route path="*" element={<Navigate to="/billing" />} />
       </Routes>
     </ThemeProvider>
   );
