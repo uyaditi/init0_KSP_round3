@@ -17,7 +17,7 @@ This project aims to provide predictive crime analysis using a web interface for
 
 ## Screenshots
 
-Screenshots of the project:
+Screenshots of the Citizen's App:
 <div style="display: flex; flex-wrap: wrap;">
     <img src="https://github.com/uyaditi/init0_KSP_round3/assets/126171723/fc7fc58a-ccfe-4273-a83a-7f1b6ba29620" style=" width: 20%; height: 400px; margin-right: 50px;"/>
     <img src="https://github.com/uyaditi/init0_KSP_round3/assets/126171723/adff6cf1-b78c-4b0d-8024-9df1ed488ce8" style=" width: 20%; height: 400px; margin-right: 50px;"/>
@@ -25,6 +25,7 @@ Screenshots of the project:
      <img src="https://github.com/uyaditi/init0_KSP_round3/assets/126171723/129bc43d-d3d6-4c95-91a9-0122e35884c7" style=" width: 20%; height: 400px; margin-right: 50px;"/>
 <br/>
 <br/>
+Screenshots of the Police Dashboard:    
 <div style="display: flex; flex-wrap: wrap;">
     <img src="https://github.com/uyaditi/init0_KSP_round3/assets/123807371/e4f67a10-b16c-4d28-ac85-37190cc98d14" style=" width: 45%; height: 280px; margin-right: 50px;"/>
     <img src="https://github.com/uyaditi/init0_KSP_round3/assets/123807371/593f3c10-98f4-46d9-8962-a26bab19d772" style=" width: 45%; height: 280px; margin-right: 50px;"/>
