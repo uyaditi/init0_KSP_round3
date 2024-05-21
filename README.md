@@ -26,6 +26,7 @@ Screenshots of the Citizen's App:
 <br/>
 <br/>
 Screenshots of the Police Dashboard:    
+<br/>
 <div style="display: flex; flex-wrap: wrap;">
     <img src="https://github.com/uyaditi/init0_KSP_round3/assets/123807371/e4f67a10-b16c-4d28-ac85-37190cc98d14" style=" width: 45%; height: 280px; margin-right: 50px;"/>
     <img src="https://github.com/uyaditi/init0_KSP_round3/assets/123807371/593f3c10-98f4-46d9-8962-a26bab19d772" style=" width: 45%; height: 280px; margin-right: 50px;"/>
